@@ -14,6 +14,7 @@
 		2C40ACA421C332D0009794E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40ACA221C332D0009794E8 /* LaunchScreen.storyboard */; };
 		2C40ACAC21C33539009794E8 /* TaskViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40ACAB21C33539009794E8 /* TaskViewCell.swift */; };
 		2C40ACB221C33DDD009794E8 /* BMImodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C40ACB021C33DDD009794E8 /* BMImodel.xcdatamodeld */; };
+		2C40ACB421C349B4009794E8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40ACB321C349B4009794E8 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2C40ACA521C332D0009794E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C40ACAB21C33539009794E8 /* TaskViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewCell.swift; sourceTree = "<group>"; };
 		2C40ACB121C33DDD009794E8 /* BMIModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BMIModel.xcdatamodel; sourceTree = "<group>"; };
+		2C40ACB321C349B4009794E8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2C40ACA221C332D0009794E8 /* LaunchScreen.storyboard */,
 				2C40ACA521C332D0009794E8 /* Info.plist */,
 				2C40ACB021C33DDD009794E8 /* BMImodel.xcdatamodeld */,
+				2C40ACB321C349B4009794E8 /* ProfileViewController.swift */,
 			);
 			path = BMIapp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				2C40ACAC21C33539009794E8 /* TaskViewCell.swift in Sources */,
 				2C40AC9C21C332CD009794E8 /* ViewController.swift in Sources */,
+				2C40ACB421C349B4009794E8 /* ProfileViewController.swift in Sources */,
 				2C40ACB221C33DDD009794E8 /* BMImodel.xcdatamodeld in Sources */,
 				2C40AC9A21C332CD009794E8 /* AppDelegate.swift in Sources */,
 			);
