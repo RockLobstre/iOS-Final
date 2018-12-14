@@ -12,7 +12,7 @@
         <!--BMI Tracker-->
         <scene sceneID="6Gk-od-Fo0">
             <objects>
-                <tableViewController id="lGm-gb-l5F" sceneMemberID="viewController">
+                <tableViewController id="lGm-gb-l5F" customClass="ViewController" customModule="BMIapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hr9-c5-xlz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,8 +49,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="taskDate" destination="ZAG-kf-BYA" id="L33-v2-I7f"/>
-                                    <outlet property="taskName" destination="OWq-yV-qeo" id="ryb-wJ-YUP"/>
+                                    <outlet property="BMI" destination="hy4-Nr-E5d" id="fk9-xT-Pu2"/>
+                                    <outlet property="Date" destination="ZAG-kf-BYA" id="88L-PB-E1m"/>
+                                    <outlet property="Weight" destination="OWq-yV-qeo" id="oeY-R8-T9b"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,7 +66,11 @@
                                 <segue destination="nxk-QE-pKL" kind="show" id="MSk-Rr-Odx"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="W1A-PX-ydI"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="W1A-PX-ydI">
+                            <connections>
+                                <action selector="addTask:" destination="lGm-gb-l5F" id="BJc-Zf-Exs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jij-EI-LUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
