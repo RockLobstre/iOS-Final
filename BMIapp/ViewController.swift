@@ -106,7 +106,11 @@ class ViewController: UITableViewController {
         
         task.setValue(weight, forKey: "weight")
         
-        task.setValue("52", forKey: "bmi")
+        if let text5 = UserDefaults.standard.string(forKey: "savedHeight") {
+            var result: Double = Double(weight)! / Double(pow(Double(text5)!,2))
+            task.setValue(String(result), forKey: "bmi")
+        }
+        
         
         do {
             try managedContext.save()

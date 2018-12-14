@@ -27,8 +27,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var bmiShowText: UILabel!
     
     @IBAction func calculateBMI(_ sender: Any) {
-//        let result = Double(weight.text.) / ((height.text.toInt() ?? 0) * (height.text.toInt() ?? 0))
-        
+        var result: Double = Double(weight.text!)! / Double(pow(Double(height.text!)!,2))
+        bmiShowText.text = String(result)
     }
     
     @IBAction func savePageBMI(_ sender: Any) {
